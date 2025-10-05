@@ -1,0 +1,38 @@
+a {
+    color: purple;
+}
+a.main {
+    color: green;
+}
+ul.square_marker{
+    list-style: square;
+}
+
+ul.checklist-marker {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+ul.checklist_marker li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+
+ul.checklist_marker li::before {
+    content: "✔";
+    color: purple;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ul li ul {
+    list-style: none;
+}
+.underline a {
+    text-decoration: none;
+}
+.number_marker{
+    list-style: decimal;
+}
