@@ -1,5 +1,5 @@
 * {
-    font-family: Arial;
+    font-family: Arial, serif;
     font-size: 20px;
     text-indent: 40px;
 }
@@ -30,13 +30,13 @@ div {
     text-shadow: 5px -5px 3px red;
 }
 
-.block-1 {
+.block-one {
     text-decoration: line-through;
     text-transform: uppercase;
     text-indent: 50px;
 }
 
-.block-2 {
+.block-two {
     letter-spacing: 30px;
     word-spacing: 50px;
 }

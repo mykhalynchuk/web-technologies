@@ -12,7 +12,6 @@ ul.square-marker {
 
 .image-marker {
     list-style-image: url("li.svg");
-    padding-left: 20px;
 }
 
 ul li ul {
@@ -23,6 +22,6 @@ ul li ul {
     text-decoration: none;
 }
 
-.number-marker{
+.number-marker {
     list-style: decimal;
 }
