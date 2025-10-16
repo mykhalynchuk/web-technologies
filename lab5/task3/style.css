@@ -1,0 +1,107 @@
+/* Загальні налаштування сторінки */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #222;
+    margin: 40px;
+}
+
+/* Заголовок */
+h2 {
+    text-align: center;
+    color: #1e3a8a;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+/* Поля форми */
+form {
+    background-color: #ffffff;
+    border: 2px solid #1e3a8a;
+    border-radius: 12px;
+    padding: 20px 30px;
+    width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Групи полів */
+fieldset {
+    border: 1px solid #94a3b8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8fafc;
+}
+
+legend {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/* Підписи */
+label {
+    font-weight: 500;
+    color: #334155;
+}
+
+/* Поля вводу */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 95%;
+    padding: 6px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* Кнопки */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Для кнопки reset */
+button[type="reset"] {
+    background-color: #f43f5e;
+}
+
+button[type="reset"]:hover {
+    background-color: #e11d48;
+}
+
+/* Вирівнювання кнопок */
+form > button {
+    margin-right: 10px;
+}
+
+/* Радіо-кнопки та чекбокси */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
