@@ -17,14 +17,14 @@ ul {
     margin: 0;
 }
 
-.level1 > li {
+.level-first > li {
     background-color: rgb(103, 158, 128);
     padding: 0 20px 0 50px;
     background-repeat: no-repeat;
     margin-bottom: 10px;
 }
 
-.level2 > li {
+.level-second > li {
     font-size: 18px;
     font-style: italic;
     background-color: rgb(153, 180, 102);
@@ -39,18 +39,18 @@ span {
     display: inline-block;
 }
 
-.level1 > li > span {
+.level-first > li > span {
     font-size: 20px;
     font-weight: 700;
     background-color: rgb(199, 124, 106);
     margin-bottom: 10px;
 }
 
-.level2 > li > span {
+.level-second > li > span {
     background-color: rgb(218, 106, 32);
 }
 
-.prep {
+.add-task {
     background-image: url("icons/rule.png");
 }
 

@@ -1,4 +1,4 @@
-body {
+div {
     font-family: "Times New Roman", Times, serif;
     display: flex;
     justify-content: center;
@@ -15,17 +15,17 @@ table {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Загальний стиль комірок */
+
 th, td {
     border: 1px solid #fff;
     padding: 15px;
     font-weight: bold;
 }
 
-/* 1 рядок (заголовок): від найсвітлішого до найтемнішого */
+
 tr:first-child th:nth-child(1) {
     background-color: rgb(247, 218, 218);
-    color: rgb(108, 30, 32);
+    color: white;
 }
 
 tr:first-child th:nth-child(2) {
@@ -48,13 +48,13 @@ tr:first-child th:nth-child(5) {
     color: white;
 }
 
-/* Перший стовпець (2–6 рядки) */
+
 tr:nth-child(n+2) td:first-child {
     background-color: rgb(207, 70, 72);
     color: white;
 }
 
-/* 2, 4, 6 рядки: стовпці 2–5 мають темніший колір */
+
 tr:nth-child(2) td:nth-child(n+2),
 tr:nth-child(4) td:nth-child(n+2),
 tr:nth-child(6) td:nth-child(n+2) {
@@ -62,7 +62,7 @@ tr:nth-child(6) td:nth-child(n+2) {
     color: rgb(108, 30, 32);
 }
 
-/* 3, 5 рядки: стовпці 2–5 мають світліший колір */
+
 tr:nth-child(3) td:nth-child(n+2),
 tr:nth-child(5) td:nth-child(n+2) {
     background-color: rgb(247, 218, 218);
