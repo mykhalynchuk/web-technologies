@@ -1,0 +1,73 @@
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+header {
+    overflow: hidden;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.logo {
+    float: left;
+
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+
+}
+
+.menu {
+    float: right;
+}
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.menu li {
+    margin: 10px;
+    float: left;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px;
+    background: rgb(255, 117, 64);
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.columns {
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 5px dotted red;
+    text-align: justify;
+}
+
+.columns img {
+    width: 200px;
+    padding: 10px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}

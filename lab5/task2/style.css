@@ -15,6 +15,17 @@ table {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+thead {
+    color: white;
+}
+
+tr:nth-child(1) {
+    text-color: white;
+}
+
+tr:nth-child(n+2) {
+    color: rgb(108, 30, 32);
+}
 
 th, td {
     border: 1px solid #fff;
@@ -25,33 +36,33 @@ th, td {
 
 tr:first-child th:nth-child(1) {
     background-color: rgb(247, 218, 218);
-    color: white;
+
 }
 
 tr:first-child th:nth-child(2) {
     background-color: rgb(237, 182, 182);
-    color: white;
+
 }
 
 tr:first-child th:nth-child(3) {
     background-color: rgb(229, 145, 146);
-    color: white;
+
 }
 
 tr:first-child th:nth-child(4) {
     background-color: rgb(161, 45, 48);
-    color: white;
+
 }
 
 tr:first-child th:nth-child(5) {
     background-color: rgb(108, 30, 32);
-    color: white;
+
 }
 
 
 tr:nth-child(n+2) td:first-child {
     background-color: rgb(207, 70, 72);
-    color: white;
+
 }
 
 
@@ -59,12 +70,12 @@ tr:nth-child(2) td:nth-child(n+2),
 tr:nth-child(4) td:nth-child(n+2),
 tr:nth-child(6) td:nth-child(n+2) {
     background-color: rgb(237, 182, 182);
-    color: rgb(108, 30, 32);
+
 }
 
 
 tr:nth-child(3) td:nth-child(n+2),
 tr:nth-child(5) td:nth-child(n+2) {
     background-color: rgb(247, 218, 218);
-    color: rgb(108, 30, 32);
+
 }
