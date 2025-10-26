@@ -1,0 +1,153 @@
+.wrapper {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #ffffff;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.header {
+    overflow: hidden;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.logo {
+    float: left;
+
+
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+}
+
+.menu {
+    float: right;
+}
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgb(255, 117, 64);
+}
+
+main {
+    overflow: hidden;
+}
+
+.block {
+    width: 300px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+    text-align: justify;
+    min-height: 120px;
+}
+
+
+.green {
+    border: 6px solid green;
+    background-color: #eaffea;
+}
+
+.green-salad {
+    border: 6px solid;
+    border-color: green greenyellow;
+    background-color: #eaffea;
+}
+
+.orange {
+    background-color: #fff2e5;
+}
+
+
+.radius-one {
+    border-radius: 10px;
+}
+
+.radius-two {
+    border-radius: 70px 0;
+}
+
+.radius-three {
+    border-radius: 30px 150px;
+}
+
+.radius-four {
+    border-radius: 70px/25px;
+}
+
+.radius-five {
+    border-radius: 125px/75px 5px;
+}
+
+.radius-six {
+    border-bottom-right-radius: 100%;
+}
+
+.image-one {
+    border: 12px solid transparent;
+    border-image: url('../images/Untitled.png') 16 round repeat;
+}
+
+.image-two {
+    border: 12px solid transparent;
+    border-image: url('../images/Untitled2.png') 8 round;
+}
+
+.image-three {
+    border: 12px solid transparent;
+    border-image: url('../images/Untitled.png') 16 stretch;
+}
+
+.image-four {
+    border: 12px solid transparent;
+    border-image-source: url('../images/Untitled3.png');
+    border-image-slice: 1;
+    border-image-repeat: repeat;
+    border-image-width: 12px;
+}
+
+.image-five {
+    border: 12px solid transparent;
+    border-image: url('../images/Patern.png') 48 repeat stretch;
+}
+
+.image-six {
+    border: 12px double;
+    border-image: url('../images/Untitled2.png') 8 stretch;
+}
+
+/* Текст заголовка */
+.block h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: left;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

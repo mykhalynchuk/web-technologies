@@ -1,0 +1,96 @@
+.wrapper {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #ffffff;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.header {
+    overflow: hidden;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+}
+
+.menu {
+    float: right;
+}
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgb(255, 117, 64);
+}
+
+
+.blocks {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 25px 35px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.block-thirteenth {
+    background-color: rgb(103, 5, 13);
+    border-radius: 60px;
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+
+.block-fourteenth {
+    background-color: rgb(161, 85, 87);
+    border-radius: 60px;
+    width: 95%;
+    margin-bottom: 25px;
+}
+
+
+.block-fifteenth-sixteenth {
+    background-color: rgb(187, 32, 42);
+    border-radius: 60px;
+    width: 46%;
+    margin-right: 1.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h3 {
+    text-align: center;
+}

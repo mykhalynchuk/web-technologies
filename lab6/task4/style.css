@@ -1,0 +1,116 @@
+.wrapper {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #ffffff;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.header {
+    overflow: hidden;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.logo {
+    float: left;
+
+
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+}
+
+.menu {
+    float: right;
+}
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgb(255, 117, 64);
+}
+
+
+.shadows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 80px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.shadow {
+    width: 250px;
+    height: 300px;
+    border: 1px solid green;
+    background-color: white;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+
+.shadow img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.shadow h3 {
+    padding-left: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.shadow p {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+
+.shadow-one {
+    box-shadow: -5px -5px 3px 3px green;
+}
+
+.shadow-two {
+    box-shadow: 0 0 10px 10px green;
+}
+
+.shadow-three {
+    box-shadow: 5px 5px 3px 3px darkseagreen;
+}
+
+.shadow-four {
+    box-shadow: 0 0 50px 5px green;
+}
+
+.shadow-five {
+    box-shadow: inset -4px 0 0 0 blue, inset 4px 0 0 0 red, inset 0 4px 0 0 green, inset 0 -4px 0 0 orangered;
+}
+
+.shadow-six {
+    box-shadow: 0 -10px 0 -5px orangered, 0 10px 0 -5px green;
+}
