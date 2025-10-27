@@ -1,45 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css"/>
-    <title>task5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Widget</title>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #d0d0d0;
+    padding-top: 100px;
+}
+
+.weather-widget {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.widget-main {
+    position: relative;
+    width: 220px;
+    height: 200px;
+    background: #1a1a1a;
+    color: white;
+    z-index: 2;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.arrow-nav {
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.arrow-nav button {
+    padding: 5px 10px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.2s;
+}
+
+.arrow-nav button:hover {
+    opacity: 1;
+}
+
+.temperature {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+.weather-icon {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    width: 180px;
+    z-index: 10;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+}
+
+.widget-forecast {
+    position: absolute;
+    bottom: -5px;
+    right: -80px;
+    width: 200px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px rgba(47, 43, 43, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.forecast-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.forecast-day {
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: #333;
+}
+
+.forecast-day .day-name {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.forecast-day .day-temp {
+    display: block;
+    font-size: 16px;
+    margin-top: 4px;
+}
+</style>
 </head>
 <body>
+
 <div class="weather-widget">
     <div class="widget-main">
         <div class="arrow-nav">
-            <span>&larr;</span>
-            <span>&rarr;</span>
+            <button id="prev">&larr;</button>
+            <button id="next">&rarr;</button>
         </div>
-        <div class="temperature">17</div>
+        <div class="temperature">17°</div>
     </div>
-    <img src="../image/cloud.png" alt="Хмарно" class="weather-icon"/>
+    <img src="cloud.png" alt="Хмарно" class="weather-icon"/>
     <div class="widget-forecast">
         <ul class="forecast-list">
-            <li class="forecast-day">
-                <span class="day-name">Mon</span>
-                <span class="day-temp">17°</span>
-            </li>
-            <li class="forecast-day">
-                <span class="day-name">Tue</span>
-                <span class="day-temp">19°</span>
-            </li>
-            <li class="forecast-day">
-                <span class="day-name">Wed</span>
-                <span class="day-temp">16°</span>
-            </li>
-            <li class="forecast-day">
-                <span class="day-name">Thu</span>
-                <span class="day-temp">18°</span>
-            </li>
-            <li class="forecast-day">
-                <span class="day-name">Fri</span>
-                <span class="day-temp">21°</span>
-            </li>
+            <li class="forecast-day"><span class="day-name">Mon</span><span class="day-temp">17°</span></li>
+            <li class="forecast-day"><span class="day-name">Tue</span><span class="day-temp">19°</span></li>
+            <li class="forecast-day"><span class="day-name">Wed</span><span class="day-temp">16°</span></li>
+            <li class="forecast-day"><span class="day-name">Thu</span><span class="day-temp">18°</span></li>
+            <li class="forecast-day"><span class="day-name">Fri</span><span class="day-temp">21°</span></li>
         </ul>
     </div>
 </div>
+
 </body>
 </html>
