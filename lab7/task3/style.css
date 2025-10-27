@@ -17,7 +17,7 @@ button {
     width: 620px;
     min-height: 410px;
     border: 20px solid #868686;
-    background-image: url(../image/Unknown.jpeg);
+    background-image: url(image/Unknown.jpeg);
 }
 
 .form-container form h2 {
