@@ -1,84 +1,86 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #f0f0f0;
-    font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-    position: relative;
-    width: 500px;
-    height: 300px;
-    border: 2px solid #000;
+.demo-container {
+  width: 100%;
+  height: 100vh;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
 }
 
-/* === Зелені блоки (1.1 та 1.2) === */
-.block1-1,
-.block1-2 {
-    position: absolute;
-    width: calc(33.33% - 10px);
-    height: calc(25% - 5px);
-    background: #00b050;
-    color: #000;
-    text-align: center;
-    line-height: 60px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 5;
+.layout {
+  position: relative;
+  width: 900px;
+  max-width: 100%;
+  height: 600px;
+  max-height: 90vh;
+  border: 2px solid #000;
+  background: #fff;
+  overflow: hidden;
 }
 
-/* Розташування */
-.block1-1 {
-    bottom: 10px;
-    left: 10px;
+
+.trigger {
+  position: absolute;
+  bottom: 20px;
+  width: 30%;
+  height: 60px;
+  background: #00b050;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 5;
+  border-radius: 6px;
+  user-select: none;
 }
 
-.block1-2 {
-    bottom: 10px;
-    right: 10px;
+.trigger-one {
+  left: 20px;
 }
 
-/* === Сині блоки (2.1 та 2.2) === */
-.block2-1,
-.block2-2 {
-    position: absolute;
-    background: #4a90e2;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-    opacity: 0;
-    pointer-events: none; /* щоб не заважали при наведенні */
-    transition: opacity 0.5s ease;
+.trigger-two {
+  right: 20px;
 }
 
-/* Розташування синіх блоків */
-.block2-1 {
-    top: 10px;
-    right: 10px;
-    width: calc(66.66% - 20px);
-    height: calc(100% - 20px);
+
+.panel {
+  position: absolute;
+  top: 20px;
+  padding: 16px;
+  color: #fff;
+  background: #4a90e2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  border-radius: 6px;
+  transform: translateY(-6px);
 }
 
-.block2-2 {
-    top: 10px;
-    left: 10px;
-    width: calc(33.33% - 10px);
-    height: calc(66.66% - 10px);
+.panel-one {
+  left: 20px;
+  width: 28%;
+  height: 62%;
 }
 
-/* === Активація при наведенні === */
-
-/* Навели на 1.1 — показується 2.1 */
-.block1-1:hover ~ .block2-1 {
-    opacity: 1;
-    pointer-events: auto;
+.panel-two {
+  right: 20px;
+  width: 62%;
+  height: calc(100% - 40px);
 }
 
-/* Навели на 1.2 — показується 2.2 */
-.block1-2:hover ~ .block2-2 {
-    opacity: 1;
-    pointer-events: auto;
+
+.trigger-one:hover ~ .panel-one,
+.trigger-two:hover ~ .panel-two {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
