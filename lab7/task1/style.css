@@ -1,18 +1,18 @@
-/* Контейнер, у якому все позиціонується */
+
 .container {
     position: relative;
-    width: 600px; /* ширина контейнера */
-    height: 500px; /* висота контейнера */
-    margin: 50px auto; /* центрує контейнер по горизонталі */
+    width: 600px; 
+    height: 500px; 
+    margin: 50px auto; 
    
-    background-color: #f2f2f2; /* світло-сірий фон для контрасту */
+    background-color: #f2f2f2; 
 }
 
-/* Загальні стилі для блоків */
+
 .block {
     position: absolute;
-    left: 50%; /* центр по горизонталі */
-    transform: translateX(-50%); /* вирівнювання по центру */
+    left: 50%; 
+    transform: translateX(-50%); 
     color: black;
     text-align: center;
     padding: 15px;
@@ -22,26 +22,25 @@
     border-radius: 6px;
 }
 
-/* Перший блок (зелений, найбільший) */
-.block1 {
+.block-one {
     background-color: #00b050;
     width: 400px;
     height: 60px;
-    top: 40px; /* відступ згори */
+    top: 40px; 
 }
 
-/* Другий блок (світло-зелений, середній) */
-.block2 {
+
+.block-two {
     background-color: #92d050;
     width: 260px;
     height: 70px;
-    top: 160px; /* однаковий відступ між блоками */
+    top: 160px; 
 }
 
-/* Третій блок (синій, найменший) */
-.block3 {
+
+.block-three {
     background-color: #4a90e2;
     width: 170px;
     height: 80px;
-    top: 280px; /* ще один відступ */
+    top: 280px; 
 }
