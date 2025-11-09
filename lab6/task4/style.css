@@ -91,26 +91,26 @@
 }
 
 
-.shadow-one {
+.shadow-top-left {
     box-shadow: -5px -5px 3px 3px green;
 }
 
-.shadow-two {
+.shadow-glow {
     box-shadow: 0 0 10px 10px green;
 }
 
-.shadow-three {
+.shadow-bottom-right {
     box-shadow: 5px 5px 3px 3px darkseagreen;
 }
 
-.shadow-four {
+.shadow-outer-glow {
     box-shadow: 0 0 50px 5px green;
 }
 
-.shadow-five {
+.shadow-inset-border {
     box-shadow: inset -4px 0 0 0 blue, inset 4px 0 0 0 red, inset 0 4px 0 0 green, inset 0 -4px 0 0 orangered;
 }
 
-.shadow-six {
+.shadow-double-accent {
     box-shadow: 0 -10px 0 -5px orangered, 0 10px 0 -5px green;
 }

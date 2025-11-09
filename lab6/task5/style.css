@@ -72,13 +72,13 @@
     margin: 0 auto 10px;
 }
 
-.card-one {
+.card-gradient-multicolor {
     background-image: linear-gradient(
             to bottom left, orangered, blue, yellow, green
     );
 }
 
-.card-two {
+.card-checker-pattern {
     float: left;
     background-color: #eee;
     background-image: linear-gradient(
@@ -95,7 +95,7 @@
     background-position: 0 0, 30px 30px;
 }
 
-.card-three {
+.card-striped-columns {
     width: 300px;
     height: 400px;
     border-radius: 20px;
@@ -109,7 +109,7 @@
     background-repeat: no-repeat;
 }
 
-.card-four {
+.card-corner-accents {
     float: left;
     background: linear-gradient(to top left, #ff0 50%, transparent 50.1%) bottom right / 70% 70% no-repeat,
     linear-gradient(to top right, #008000 50%, transparent 50.1%) bottom left / 50% 50% no-repeat,
@@ -119,7 +119,7 @@
 }
 
 
-.card-five {
+.card-rainbow-gradient {
     float: left;
     background: repeating-linear-gradient(
             190deg,
